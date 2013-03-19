@@ -26,6 +26,8 @@
     (/ (* 2 (set-length (intersection a b)))
        (+ (set-length a) (set-length b)))))
 
+(declare levenshtein)
+
 (defn levenshtein-raw
   "calculates the levenshtein distane between two strings"
   [a b]

@@ -26,7 +26,7 @@
     (/ (* 2 (set-length (intersection a b)))
        (+ (set-length a) (set-length b)))))
 
-(defn levenshtein
+(defn levenshtein-raw
   "calculates the levenshtein distane between two strings"
   [a b]
   (let 
@@ -35,10 +35,9 @@
        cost (if (= (first a) (first b)) 0 1)]
     (if (or (= len-a 0) (= len-b 0)) 
       (+ len-a len-b)
-      (apply min
-             (map (fn [x y z] 
-                     (+ (levenshtein x y) z))
-                   [(rest a) a (rest a)]
-                   [b (rest b) (rest b)]c
-                   [1 1 cost])))))
-            
+      (min
+       (+ (levenshtein (rest a) b) 1)
+       (+ (levenshtein a (rest b)) 1)
+       (+ (levenshtein (rest a) (rest b)) cost)))))
+
+(def levenshtein (memoize levenshtein-raw))

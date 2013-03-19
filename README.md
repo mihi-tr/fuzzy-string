@@ -17,7 +17,7 @@ add the following to your lein project:
 
 then 
 ```clojure
-  (use 'fuzzy-string)
+  (use 'fuzzy-string.core)
   (dice "Hair" "Wear")
   (levenshtein "Hair" "Wear")
 ```

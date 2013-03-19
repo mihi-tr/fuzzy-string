@@ -5,10 +5,22 @@ A Clojure library for fuzzy string matching
 It implements the following matching algorithms
 
 * dice
+* levenshtein
 
 ## Usage
 
-FIXME
+add the following to your lein project:
+
+```clojure
+  [fuzzy-string "0.1.0-SNAPSHOT"]
+```
+
+then 
+```clojure
+  (use 'fuzzy-string)
+  (dice "Hair" "Wear")
+  (levenshtein "Hair" "Wear")
+```
 
 ## License
 

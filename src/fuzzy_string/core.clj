@@ -3,7 +3,7 @@
 
 (defn bigram 
   "create bigrams out of a string"
-  [strn]
+  [^String strn]
   (loop [os strn
          rs []]
     (if (<= (. os length) 2)

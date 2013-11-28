@@ -12,7 +12,7 @@ It implements the following matching algorithms
 add the following to your lein project:
 
 ```clojure
-  [fuzzy-string "0.1.0-SNAPSHOT"]
+  [fuzzy-string "0.1.2-SNAPSHOT"]
 ```
 
 then 

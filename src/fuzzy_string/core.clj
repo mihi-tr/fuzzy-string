@@ -1,7 +1,7 @@
 (ns fuzzy-string.core
   (:use [clojure set]))
 
-(defn bigram 
+(defn bigrams 
   "create bigrams out of a string"
   [^String strn]
   (loop [os strn
@@ -11,6 +11,7 @@
       (recur (. os substring 1) 
              (conj rs (. os substring 0 2))))))
       
+(def bigram (memoize bigrams))
 
 (defn set-length
   "returns the number of elements in a set"

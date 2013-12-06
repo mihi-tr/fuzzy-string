@@ -1,4 +1,4 @@
-(defproject fuzzy-string "0.1.2-SNAPSHOT"
+(defproject fuzzy-string "0.1.2"
   :description "Fuzzy-string matching write description"
   :url "http://github.com/mihi-tr/fuzzy-string"
   :license {:name "Eclipse Public License"

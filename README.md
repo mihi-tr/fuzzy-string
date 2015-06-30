@@ -11,9 +11,8 @@ It implements the following matching algorithms
 
 add the following to your lein project:
 
-```clojure
-  [fuzzy-string "0.1.2-SNAPSHOT"]
-```
+[![Clojars
+Project](http://clojars.org/fuzzy-string/latest-version.svg)](http://clojars.org/fuzzy-string)
 
 then 
 ```clojure
@@ -24,6 +23,6 @@ then
 
 ## License
 
-Copyright © 2013 Michael Bauer
+Copyright © 2013-2015 Michael Bauer
 
 Distributed under the Eclipse Public License, the same as Clojure.

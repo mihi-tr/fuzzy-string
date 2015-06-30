@@ -5,13 +5,8 @@
 (deftest bigram-test
   (testing "bigram"
     (let [strn "test"
-        bgrm ["te" "es" "st"]]
+        bgrm #{"te" "es" "st"}]
     (is (= bgrm (bigram strn))))))
-
-(deftest set-length-test
-  (testing "set-length"
-    (let [st (set [1 2 3])]
-      (is (= (set-length st) 3)))))
 
 (deftest dice-test-1
   (testing "dice - equal strings"

@@ -8,6 +8,7 @@ It implements the following matching algorithms
 
 * dice
 * levenshtein
+* nilsimsa hashes (fuzzy-string.nilsimsa)
 
 ## Usage
 
@@ -23,11 +24,6 @@ then
   (levenshtein "Hair" "Wear")
 ```
 
-## supported algorithms
-
-* dice
-* levenshtein
-* nilsimsa hashes
 
 ## License
 

@@ -23,6 +23,12 @@ then
   (levenshtein "Hair" "Wear")
 ```
 
+## supported algorithms
+
+* dice
+* levenshtein
+* nilsimsa hashes
+
 ## License
 
 Copyright © 2013-2015 Michael Bauer

@@ -1,5 +1,7 @@
 # fuzzy-string
 
+[![travis-ci status](https://travis-ci.org/mihi-tr/fuzzy-string.svg)](https://travis-ci.org/mihi-tr/fuzzy-string)
+
 A Clojure library for fuzzy string matching
 
 It implements the following matching algorithms
